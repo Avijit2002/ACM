@@ -1,0 +1,9 @@
+
+.r-table{
+    margin: 5px 30px;
+}
+@media screen and (max-width: 1200px){
+    .r-table{
+        width: 70%;
+    }
+}

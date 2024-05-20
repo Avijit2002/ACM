@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    margin-left: .5% ;
+}
+.navi{
+    padding: 0;
+}
+.pad{
+    padding-left:30px;
+    padding-right: 30px;
+}
+.navbar-nav .nav-link.active {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-nav {
+    margin-right: 15px;
+}
+.nav-link {
+    margin: 0px 8px;
+    
+}

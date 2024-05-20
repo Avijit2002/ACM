@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+h1, h2, h3,h4,p{
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-weight: 800;
+    color: #582fbf;
+    font-size: 2.7em;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+.top-container{
+    margin-bottom: 70px;
+    padding: 0;
+    background: linear-gradient(to right,rgba(179, 179, 255, 0.582),rgba(255, 255, 255, 0.626),rgba(255, 255, 210, 0.593));
+    background: linear-gradient(to right,rgba(232, 232, 253, 0.582),rgba(255, 255, 255, 0.626),rgba(249, 249, 220, 0.593)); 
+    
+}
+.bg-pic{
+    height: 500px;
+    position: absolute;
+    top: 19%;
+    right: 2.5%;
+    z-index: -1;
+}
+.div3{
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0)80%,rgba(255, 255, 255, 0.962));
+}
+.mem{
+    display: inline-block;
+    margin-bottom: 2%;
+    
+}
+.top-content{
+    position: relative;
+    left: 14%;
+    top:3%;
+    padding-right: 17%;
+}
+.top-content h1{
+    
+    background: linear-gradient(to right,rgb(28, 66, 110),#5959ac);
+    /* giving color gradient to text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.8em;
+    font-weight: 800;
+}
+.xyz{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.top-content p{
+    padding-top: 10px;
+    color: #494869;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.but-1{
+    margin:8%;
+}
+
+.div3 a{
+    text-align: center;
+    width: 160px;
+    color: #494869;
+    margin: 5% 3% 0 0 ;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 8px;
+    border: 3px solid #494869;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s; 
+}
+.div3 a:hover{
+    color: white;
+    background: #5959ac;
+    border-color: #5959ac;
+}
+.middle-container{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+.middle-container{
+    background: linear-gradient(to bottom, white ,rgb(225, 225, 225));
+    
+}
+.upcoming-event{
+    background: rgb(251, 254, 255);
+    padding-top: 2%;
+    border-radius: 6px;
+    width: 88%;
+    margin: .5% auto;
+    box-shadow: 1px 1px 4px rgb(183, 181, 181);
+}
+.upcoming-row{
+    padding: 0% 6%;
+}
+.upcoming-event h2{
+    margin-top: 30px;
+}
+.upcoming-event h2::after{
+    content: "";
+    position: relative;
+    display: block;
+    width: 15%;
+    height: 4px;
+    background: rgb(102, 26, 195);
+    bottom: 0;
+    margin: 25px auto;
+}
+.c-cards{
+    margin: 8% auto;
+}
+.carde{
+    padding: 0;
+    width: 300px;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    box-shadow: 1px 1px 4px black;
+}
+.pic{
+    height: 290px;
+    padding: 0;
+}
+.profile-pic{
+    height: 100%;
+    width: 100%;
+}
+
+.carde:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 40px 60px 0px,
+    rgba(0, 0, 0, 0.3) 0px 20px 40px 0px,
+    rgba(10, 37, 64, 0.35) 0px 0px 5px 0px;
+    transition: 0.2s ease;
+}
+.card-content{
+    
+    background: linear-gradient(to bottom right, rgb(247, 239, 255),rgb(244, 226, 255));
+    color: #494869;
+    text-align: left;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    padding: 10px;
+    cursor: pointer;
+}
+.card-content a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 8px;
+    border: 2px solid #262626;
+    font-size: 12px;
+    transition: .5s;
+    
+}
+.carde:hover .card-content a{
+    background: rgb(102, 26, 195);
+    color: #fff;
+    border-color: rgb(102, 26, 195);
+}
+.card-content h6{
+    padding: 0 10px;
+    height: 50%;
+    font-size: 20px;
+}
+
+
+
+.selectVal{
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 120px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom,rgb(242, 241, 241),#d7d7d7);
+}
+
+.event-cal{
+    background: linear-gradient(to bottom, rgb(242, 241, 241),rgb(229, 241, 255));
+    padding-top: 5%;
+}
+.event-cal h2{
+    font-size: 2.7em;
+}
+.event-head-1::after{
+    content: "";
+    position: relative;
+    display: block;
+    width: 15%;
+    height: 4px;
+    background: rgb(102, 26, 195);
+    bottom: 0;
+    margin: 25px auto;
+}
+.cal{
+    margin: 4% auto 4% auto;
+    position: relative;
+    left: 4%;
+    width: 460px;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cal .toggle{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #8e8da2;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2em;
+    transition: 1.25s;
+}
+.cal.active .toggle{
+    transform: rotate(360deg);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, .15), 0 0 0 2px #fff, 0 0 0 8px #8e8da2;
+}
+.cal .selector{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transition: .3s;
+    transform: rotate(calc(360deg/12 * var(--i))); 
+    transform-origin: 230px;
+    scale: 0;
+    transition-delay: calc(.05s * var(--i));
+}
+.cal.active .selector{
+    scale: 1;
+}
+.cal .selector .a{
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(calc(360deg/-12 * var(--i)));
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: var(--clr);
+    color:rgb(102, 26, 195);
+    font-size: .85em;
+    text-decoration: none;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    transition: .3s;
+    
+}
+
+.cal .selector:hover .a{
+    font-size: 1em;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .15), 0 0 0 1px rgb(102, 26, 195), 0 0 0 3px #fff;
+    cursor: pointer;
+}
+
+
+
+
+.month-event-display{
+    padding: 20px 0;
+    margin: 5% auto;
+    background: #ffe2e2af;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px rgb(183, 181, 181);
+}
+.month-event-display h4{
+    font-size: 30px; font-weight:700; color:#494869
+}
+.month-event{
+    display: none;
+}
+
+
+
+
+
+.month-events{
+    position: relative;
+    margin: 3% auto;
+    padding: 0;
+    width: 60%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    float: right;
+}
+.month-events ul{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.month-events ul li{
+    list-style: none;
+    background: #fff;
+    height: 170px;
+    /*margin: 15px 0;*/
+}
+.month-events ul li .time{
+    position: relative;
+    color: white;
+    height: 100%;
+    background: #262626;
+    width: 30%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+.month-events ul li:hover .time{
+    background: rgb(102, 26, 195); 
+}
+.month-time-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.month-time-content h2{
+    font-weight: 400;
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+}
+.month-time-content span{
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+}
+.month-events ul li .details{
+    padding: 20px;
+    background: rgb(227, 225, 225);
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.month-events ul li .details h3{
+    position: relative;
+    color: #494869;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+.month-events ul li .details p{
+    color: #494869;
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+.month-events ul li .details a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 8px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 15px;
+    transition: .5s;
+    
+}
+.month-events ul li .details a:hover{
+    background: rgb(102, 26, 195);
+    color: #fff;
+    border-color: rgb(102, 26, 195);
+}
+#Past h2::after{
+    content: "";
+    position: relative;
+    display: block;
+    width: 10%;
+    height: 4px;
+    background: rgb(102, 26, 195);
+    bottom: 0;
+    margin: 25px auto 10px auto;
+}
+.lower-container{
+    /* rgb(229, 241, 255) rgb(201, 226, 255); */
+    background: linear-gradient(to bottom,rgb(229, 241, 255),rgb(201, 226, 255));
+    text-align: center;
+    padding-bottom: 10%;
+}
+.lower-container h2{
+    padding: 5% 0;
+}
+.wrapp{
+    background: linear-gradient(to bottom,rgb(222,237,255),rgb(201, 226, 255));
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: relative;
+}
+.wrapp .center-line{
+    position: absolute;
+    background: #ff7979;
+    height: 100%;
+    width: 4px;
+    left: 50%;
+    top: 3%;
+    transform: translate(-50%);
+}
+.wrapp .rowx{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.wrapp .rowx:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+.wrapp .rowx-1{
+    justify-content: flex-start;
+
+}
+.wrapp .rowx-2{
+    justify-content: flex-end;
+
+}
+.wrapp .rowx section{
+    background: #fff;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+.wrapp .rowx section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    top: 28px;
+    transform: rotate(45deg) ;
+    
+}
+.rowx-1 section::before{
+   right: -7px;
+}
+.rowx-2 section::before{
+    left: -7px;
+ }
+ .rowx section .icons{
+    position: absolute;
+    background: #ff7979;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    top: 13px;
+    font-size: 17px;
+ }
+ .wrapp .rowx:hover .icons{
+    background: rgb(102, 26, 195);
+    
+ }
+ .rowx-1 section .icons{
+    right: -60px;
+ }
+ .rowx-2 section .icons{
+    left: -60px;
+ }
+ .details span{
+    font-size: 22px;
+    color: #494869;
+ }
+.rowx section .details,
+.rowx section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rowx section .details .title{
+    flex: 1;
+    padding-right: 15px;
+    text-align: left;
+    color: #26253b;
+    font-size: 22px;
+    font-weight: 600;
+}
+.rowx section p{
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #494869;
+    margin: 10px 0 17px 0;
+}
+.rowx section .bottom a{
+    text-decoration: none;
+    background: #ff7979;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.wrapp .rowx:hover .bottom a{
+    background: rgb(102, 26, 195);
+    
+ }
+ @media screen and (max-width: 1300px){
+    .bg-pic{
+        height: 450px;
+        position: absolute;
+        top: 21%;
+        right: 1%;
+        z-index: -1;
+    }
+    .top-content{
+        position: relative;
+        left: 14%;
+        top:3%;
+        padding-right: 17%;
+    }
+    .top-content h1{
+        font-size: 4.2em;
+    }
+    .top-content p{
+        padding-top: 10px;
+        font-size: 1.75em;
+    }
+    .upcoming-event{
+        width: 95%;
+    }
+    .upcoming-row{
+        padding: 0% 3%;
+    }
+    .carde{
+        width: 270px;
+    }
+    .pic{
+        height: 250px;
+        padding: 0;
+    }
+    .cal{
+        left: 0;
+    }
+    .month-events{
+        padding: 0;
+        width:80%;
+    }
+    .month-events ul li .details{
+        padding: 10px 8px;
+    }
+
+ }
+@media screen and (max-width: 992px){
+    .bg-pic{
+        height: 400px;
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        z-index: -1;
+    }
+    .top-content{
+        position: relative;
+        left: 8%;
+        top:15%;
+        padding-right: 10%;
+    }
+    .top-content h1{
+        font-size: 4em;
+    }
+    .top-content p{
+        padding-top: 10px;
+        font-size: 1.6em;
+    }
+    .div3 a{
+        text-align: center;
+        width: 150px;
+        margin: 7% 3% 0 0 ;
+        padding: 8px 8px;
+        font-size: 17px;
+    }
+    .month-event-display{
+        width: 90%;
+    }
+    .month-event-display h4{
+        padding: 20px 0px;
+        font-size: 22px;
+    }
+    .month-event{
+        display: none;
+    }
+
+    .month-events{
+        padding: 0;
+        width: 60%;
+    }
+    
+    .month-events ul li{
+        list-style: none;
+        background: #fff;
+        height: 150px;
+        /*margin: 15px 0;*/
+    }
+    .month-time-content h2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .month-time-content span{
+        font-size: 20px;
+    }
+    .month-events ul li .details{
+        padding: 15px 12px;
+    }
+    .month-events ul li .details h3{
+        
+        font-size: 20px;
+    }
+    .month-events ul li .details a{
+        padding: 6px 6px;
+        border: 2px solid #262626;
+        margin-top: 14px;
+        font-size: 16px;
+        transition: .5s;
+        
+    }
+    
+
+}
+@media (max-width: 768px) {
+    h2{
+        font-size:2.1em ;
+    }
+    .bg-pic{
+        height: 50%;
+        opacity: .3;
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        z-index: -1;
+    }
+    .top-content{
+        top: 20%;
+        padding-right: 15%;
+    }
+    .div3{
+        height: 700px;
+    }
+    .button{
+        margin-top: 30px;
+    }
+    .div3 a{
+        display: block;
+        margin: 3% 11% 0 0 ;
+        padding: 8px 8px;
+        font-size: 17px;
+    }
+    .upcoming-event{
+        padding-top: 5%;
+        margin: .5% auto;
+    }
+    .wrapp .center-line{
+        left: 40px;
+    }
+    .wrapp .rowx{
+        margin: 30px 0 3px 60px;
+    }
+    .wrapp .rowx section{
+        width: 100%;
+    }
+    .rowx-1 section::before{
+        left: -7px;
+    }
+    .rowx-1 section .icons{
+        left: -60px;
+    }
+    .upcoming-event{
+        padding-top: 40px;
+        width: 90%;
+        margin: .5% auto;
+    }
+    .c-cards{
+        margin: 15% auto;
+    }
+    .carde{
+        width: 270px;
+    }
+    .pic{
+        height: 260px;
+        padding: 0;
+    }
+    .card-content h6{
+        padding: 0 10px;
+        height: 50%;
+        font-size: 22px;
+    }
+    .selectVal{
+        margin-top: 20px;
+        font-size: 1.1em;
+        width: 110px;
+        height: 50px;
+    }
+    
+    .event-cal{
+        left: 0;
+        padding-top: 18%;
+    }
+    .event-cal h2{
+        font-size: 2.1em;
+    }
+    .cal{
+        margin-top: 30px;
+        left: 0;
+        width: 300px;
+        height: 300px;
+    }
+    .cal .toggle{
+        width: 60px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+    .cal .selector{
+        transform-origin: 150px;
+    }
+    .cal .selector .a{
+        width: 50px;
+        height: 50px;
+        font-size: .6em;
+    }
+    
+    .cal .selector:hover .a{
+        font-size: .8em;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .month-event-display{
+        width: 100%;
+    }
+    .month-event-display h4{
+        padding: 20px 0px;
+        font-size: 22px;
+    }
+    .month-event{
+        display: none;
+    }
+
+    .month-events{
+        padding: 0;
+        width: 60%;
+    }
+    
+    .month-events ul li{
+        list-style: none;
+        background: #fff;
+        height: 140px;
+        /*margin: 15px 0;*/
+    }
+    .month-time-content h2{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .month-time-content span{
+        font-size: 18px;
+    }
+    .month-events ul li .details{
+        padding: 15px 12px;
+    }
+    .month-events ul li .details h3{
+        
+        font-size: 19px;
+    }
+    .month-events ul li .details a{
+        padding: 4px 4px;
+        border: 2px solid #262626;
+        margin-top: 14px;
+        font-size: 12px;
+        transition: .5s;
+        
+    }
+    
+}
+
+@media (max-width: 440px) {
+    .bg-pic{
+        top: 40%;
+    }
+    h2{
+        font-size:2.1em ;
+    }
+    .div3{
+        padding-top: 30px;
+        height: 900px;
+    }
+    .div3 a{
+        
+        width: 150px;
+        margin: 8% 3% 0 0 ;
+        font-size: 16px; 
+    }
+    .top-content{
+        left: 8%;
+        top:5%;
+    }
+    .top-content h1{
+        font-size: 4em;
+    }
+    .top-content p{
+        text-align: justify;
+        padding-top: 12px;
+        font-size: 1.5em;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .carde{
+        width: 250px;
+    }
+    .pic{
+        height: 225px;
+        padding: 0;
+    }
+    .month-events{
+        padding: 0;
+        width: 90%;
+    }
+    
+    .month-events ul li{
+        list-style: none;
+        background: #fff;
+        height: 140px;
+        /*margin: 15px 0;*/
+    }
+    .month-time-content h2{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .month-time-content span{
+        font-size: 15px;
+    }
+    .month-events ul li .details{
+        padding: 8px 5px;
+    }
+    .month-events ul li .details h3{
+        
+        font-size: 19px;
+    }
+    .month-events ul li .details a{
+        padding: 4px 4px;
+        border: 2px solid #262626;
+        margin-top: 14px;
+        font-size: 12px;
+        transition: .5s;
+        
+    }
+    
+    
+    .wrapp .center-line{
+        display: none;
+    }
+    .rowx section::before,
+    .rowx-1 section .icons{
+        display: none;
+    }
+    .wrapp .rowx{
+        margin: 20px 0;
+    }
+}
+
+
+
+

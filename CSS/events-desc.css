@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    /* background: #fff9f2; */
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #582fbf;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.2em;
+}
+
+p,
+ul,
+li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: rgb(45, 52, 70);
+}
+.top-cont{
+    padding-top: 11%;
+    padding-bottom: 5%;
+    text-align: center;
+    z-index: -1;
+    background: linear-gradient(15deg,#fff9f2 45%,#fff 0%);
+}
+.event-desc{
+    padding: 30px;
+    background: rgba(211, 245, 255, 0.634);
+    background: linear-gradient(to right,rgba(232, 232, 253, 0.582),rgba(255, 255, 255, 0.62),rgba(249, 249, 220, 0.593));
+    box-shadow: 1px 1px 4px rgb(183, 181, 181);
+    border-radius: 12px;
+    width: 75%;
+    margin: 0px auto;
+}
+.banner{
+    float: left;
+    /* background: #f3e9dc;
+    background: rgba(255, 235, 205, 0.737); */
+    height: 470px;
+    width: 400px;
+    margin-right: 20px;
+}
+.banner-img{
+    height: 100%;
+    width: 100%;
+}
+.content{
+    text-align: left;
+}
+.details, .details p{
+    color:#582fbf ;
+    font-size: 1.3rem;
+}
+.desc{
+    margin-top: 15px;
+    font-size: 1.08em;
+}
+
+@media screen and (max-width: 1300px){
+    .event-desc{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 1182px){
+
+}
+@media screen and (max-width: 992px) {
+    .banner{
+        padding-top: 20px;
+        float:none;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner-img{
+        height: 100%;
+        width: 100%;
+    }
+    .content{
+        text-align: center;
+    }
+    .desc{
+        text-align: justify;
+    }
+    .title{
+        margin-top: 40px;
+    }
+    .top-cont{
+        padding-top: 24%;
+    }
+
+}
+@media (max-width: 768px){
+    .event-desc{
+        width: 95%;
+    }
+    
+
+}
+@media (max-width: 460px){
+    .banner{
+        height: 360px;
+        width: 270px;
+    }
+    .event-desc{
+        padding: 20px;
+    }
+    .title{
+        font-size: .9em;
+    }
+    
+
+}

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-weight: 800;
+    color: #582fbf;
+    font-size: 2.7em;
+}
+
+h3 {
+    font-weight: 600;
+    color: #582fbf;
+    font-size: 2.2em;
+    margin-top: 20px;
+
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.top-container {
+   
+    padding: 0;
+    background: linear-gradient(to right, rgba(179, 179, 255, 0.582), rgba(255, 255, 255, 0.626), rgba(255, 255, 210, 0.593));
+    background: linear-gradient(to right, rgba(232, 232, 253, 0.582), rgba(255, 255, 255, 0.626), rgba(249, 249, 220, 0.593));
+
+}
+.xyz{
+    position: relative; top:50%; transform: translate(0%,-50%);
+}
+.bg-pic {
+    height: 500px;
+    position: absolute;
+    top: 18%;
+    right: 2%;
+    z-index: -1;
+}
+
+.div3 {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0)80%, rgba(255, 255, 255, 0.962));
+}
+
+.mem {
+    display: inline-block;
+    margin-bottom: 2%;
+
+}
+
+.top-content {
+    padding-left: 14%;
+    padding-top: 3%;
+    padding-right: 10%;
+}
+
+.top-content h1 {
+
+    background: linear-gradient(to right, rgb(28, 66, 110), #5959ac);
+    /* giving color gradient to text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 4.2em;
+    font-weight: 800;
+}
+
+.top-content p {
+    padding-top: 10px;
+    color: #494869;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.Yselector {
+    text-align: center;
+    color: #494869;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+.Yselector p {
+    color: #494869;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.selectVal {
+    text-align: center;
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, white, #f7d9ae);
+}
+
+.color {
+    background: linear-gradient(to bottom, white, #f7d9ae);
+    padding-bottom: 5%;
+}
+
+.middle-container {
+    margin-bottom: 10%;
+    text-align: center;
+    width: 90%;
+    border-radius: 8px;
+    background: rgba(251, 254, 255, 0.67);
+    box-shadow: 1px 1px 4px rgb(183, 181, 181);
+}
+.middle-container h2::after{
+        content: "";
+        position: relative;
+        display: block;
+        width: 45%;
+        height: 4px;
+        background: rgba(102, 26, 195, 0.553);
+        bottom: 0;
+        margin: 15px auto;
+    }
+    .middle-container h2::after{
+        content: "";
+        position: relative;
+        display: block;
+        width: 45%;
+        height: 4px;
+        background: rgba(102, 26, 195, 0.868);
+        bottom: 0;
+        margin: 25px auto;
+    }
+
+.middle-container .rowi {
+    padding-top: 5%;
+}
+
+.r-cards {
+    padding: 0% 5% 5% 5%;
+
+}
+
+.c-cards {
+    padding: 5% 3.2% 0% 3.2%;
+}
+
+.carde {
+    padding: 0;
+    width: 230px;
+    border: solid 2px rgb(102, 26, 195);
+    border-radius: .5em;
+    box-shadow: 1px 1px 4px black;
+}
+
+.pic {
+    height: 200px;
+    padding: 0;
+}
+
+.profile-pic {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carde:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 40px 60px 0px,
+        rgba(0, 0, 0, 0.3) 0px 20px 40px 0px,
+        rgba(10, 37, 64, 0.35) 0px 0px 5px 0px;
+    transition: 0.2s ease;
+}
+
+.card-content {
+    background: linear-gradient(to bottom right, rgb(106, 36, 192), rgb(51, 3, 109));
+    padding: 15px !important;
+    color: aliceblue;
+    text-align: left;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    padding: 0;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .bg-pic {
+        height: 470px;
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        z-index: -1;
+    }
+
+    .middle-container {
+        width: 95%;
+    }
+    .r-cards {
+        padding: 5% 4%;
+    }
+    .c-cards {
+        padding: 0 3%;
+    }
+}
+
+@media screen and (max-width: 1182px) {
+    .carde {
+        margin: 20px auto 30px auto;
+        width: 190px;
+    }
+
+    .pic {
+        height: 165px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    .bg-pic {
+        height: 450px;
+        opacity: .8;
+        position: absolute;
+        top: 30%;
+        right: 0%;
+        z-index: -1;
+    }
+    .middle-container h2{
+        font-size: 2.5em;
+    }
+    .middle-container h3{
+        margin: 40px 0 20px 0;
+        font-size: 1.8em;
+    }
+    .carde {
+        width: 200px;
+    }
+
+    .pic {
+        height: 180px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-pic {
+        height: 450px;
+        position: absolute;
+        top: 25%;
+        opacity: .3;
+        z-index: -1;
+    }
+    .top-content h1 {
+        font-size: 3em;
+        font-weight: 800;
+    }
+
+    .top-content p {
+        padding-top: 35px;
+        color: #494869;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .middle-container h2{
+        font-size: 2.2em;
+    }
+    .middle-container h3{
+        margin: 40px 0 20px 0;
+        font-size: 1.8em;
+    }
+    .card-content{
+        padding: 13px 13px 10px 13px !important;
+
+    }
+    .middle-container h5{
+        font-size: 1.2em;
+        margin: 0px 0px 8px 0px;
+    }
+}
+
+@media (max-width: 460px) {
+    .bg-pic {
+        height: 400px;
+        position: absolute;
+        top: 30%;
+        opacity: .3;
+        z-index: -1;
+    }
+    .Yselector p{
+        padding: 10px 30px;
+        font-size: 1.2em;
+    }
+    .selectVal {
+        width: 150px;
+        height: 50px;
+
+    }
+    .xyz{
+        position: relative; top:50%; transform: translate(0%,-50%);
+    }
+    .div3 {
+        height: 90vh;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0)80%, rgba(255, 255, 255, 0.962));
+    }
+
+    .top-content {
+        padding: 3% 5%;
+    }
+
+    .top-content h1 {
+        font-size: 3em;
+        font-weight: 800;
+    }
+    .rowi{
+        margin-top: 30px;
+    }
+    .top-content p {
+        padding-top: 35px;
+        text-align: justify;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .middle-container h2{
+        font-size: 2.1em;
+    }
+    .middle-container h3{
+        margin: 40px 0 20px 0;
+        font-size: 1.6em;
+    }
+   
+
+}
