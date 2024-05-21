@@ -5,7 +5,7 @@
 
   $name = ucfirst(trim("avijit ram"));
   $username = "";   // write username here
-  $password = "";   // write password here   and remember it because there is no way to recover.... be responsible lolas !!!
+  $password = "";   // write password here   
 
   $hash = password_hash($password,PASSWORD_DEFAULT);
   
