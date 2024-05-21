@@ -4,7 +4,7 @@ This repository contains the codebase for the official website of the TINT ACM s
 
 **Project Highlights**
 
-* **Interactive Custom CMS:** Developed and maintained a user-friendly CMS (Content Management System) tailored to the chapter's specific needs, enabling seamless content management for news, events, and other announcements.
+* **Interactive Custom CMS:** Developed a user-friendly CMS (Content Management System) tailored to the chapter's specific needs, enabling seamless content management for news, events, and other announcements.
 * **Admin Portal:** Designed and implemented a comprehensive admin portal that streamlines content creation, user registration, and event listing management for chapter administrators.
 * **Cloud Hosting and Scalability:** Leveraged AWS EC2 for efficient cloud hosting, ensuring smooth website operation under varying traffic loads.
 
